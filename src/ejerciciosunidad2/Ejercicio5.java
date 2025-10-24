@@ -18,6 +18,7 @@ public class Ejercicio5 {
 		System.out.println("Jugador 1, cuarzo, pergamino o tenazas? ");
 		// se guarda en la variable jugador1
 		jugador1 = sc.next();
+		for (int i = 0; i < 50; ++i) System.out.println();
 		// se pide al segundo jugador que introduzca su eleccion
 		System.out.println("Jugador 2, cuarzo, pergamino o tenazas? ");
 		jugador2 = sc.next();
