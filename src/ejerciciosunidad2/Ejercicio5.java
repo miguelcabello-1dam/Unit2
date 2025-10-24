@@ -18,21 +18,20 @@ public class Ejercicio5 {
 		System.out.println("Jugador 1, cuarzo, pergamino o tenazas? ");
 		// se guarda en la variable jugador1
 		jugador1 = sc.next();
-		for (int i = 0; i < 50; ++i) System.out.println();
 		// se pide al segundo jugador que introduzca su eleccion
 		System.out.println("Jugador 2, cuarzo, pergamino o tenazas? ");
+		// se guarda en la variable jugador2
 		jugador2 = sc.next();
 		
-		// comprobacion si el numero es par cogiendo el resto de dividirlo entre 2
+		// si sacan lo mismo es empate
 		if (jugador1 == jugador2) {
-			// si no gana nadie, se queda en empate
 			System.out.println("Empate");
 		}
+		// si se comprueban las combinaciones y el 1 le gana al 2
 		else if (jugador1.equals("cuarzo") && jugador2.equals("tenazas") || jugador1.equals("pergamino") && jugador2.equals("cuarzo") || jugador1.equals("tenazas") && jugador2.equals("pergamino")) {
-			// si gana el jugador 1 y se imprime esto
 			System.out.println("Es " + jugador1 + " contra " + jugador2 + " , el jugador 1 se ha ganado mi vieja butacona");
+		// en cambio, si no gana el 1 ni hay empate, gana el 2
 		} else {
-			// de lo contrario gana el jugador 2 y se imprime esto
 			System.out.println("Es " + jugador1 + " contra " + jugador2 + " , el jugador 2 se ha ganado mi vieja butacona");
 		}
 		
