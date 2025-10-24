@@ -24,15 +24,16 @@ public class Ejercicio5 {
 		jugador2 = sc.next();
 		
 		// comprobacion si el numero es par cogiendo el resto de dividirlo entre 2
-		if (jugador1.equals("cuarzo") && jugador2.equals("tenazas") || jugador1.equals("pergamino") && jugador2.equals("cuarzo") || jugador1.equals("tenazas") && jugador2.equals("pergamino")) {
-			// si gana el jugador 1 y se imprime esto
-			System.out.println("Es " + jugador1 + " contra " + jugador2 + " , el jugador 1 se ha ganado mi vieja butacona");
-		} else if (jugador2.equals("cuarzo") && jugador1.equals("tenazas") || jugador2.equals("pergamino") && jugador1.equals("cuarzo") || jugador2.equals("tenazas") && jugador1.equals("pergamino")){
-			// de lo contrario gana el jugador 2 y se imprime esto
-			System.out.println("Es " + jugador1 + " contra " + jugador2 + " , el jugador 2 se ha ganado mi vieja butacona");
-		} else {
+		if (jugador1 == jugador2) {
 			// si no gana nadie, se queda en empate
 			System.out.println("Empate");
+		}
+		else if (jugador1.equals("cuarzo") && jugador2.equals("tenazas") || jugador1.equals("pergamino") && jugador2.equals("cuarzo") || jugador1.equals("tenazas") && jugador2.equals("pergamino")) {
+			// si gana el jugador 1 y se imprime esto
+			System.out.println("Es " + jugador1 + " contra " + jugador2 + " , el jugador 1 se ha ganado mi vieja butacona");
+		} else {
+			// de lo contrario gana el jugador 2 y se imprime esto
+			System.out.println("Es " + jugador1 + " contra " + jugador2 + " , el jugador 2 se ha ganado mi vieja butacona");
 		}
 		
 		// se cierra el scanner
@@ -41,3 +42,4 @@ public class Ejercicio5 {
 	}
 
 }
+
